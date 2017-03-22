@@ -21419,6 +21419,60 @@ var Message = React.createClass({
                                         )
                                     )
                                 )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'collapsible' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'clickable' },
+                                    React.createElement(
+                                        Button,
+                                        { className: 'plus-button', onClick: () => this.setState({ attachments: !this.state.attachments }) },
+                                        React.createElement('span', { className: 'glyphicon glyphicon-plus' })
+                                    ),
+                                    React.createElement(
+                                        'h6',
+                                        null,
+                                        'Attachment'
+                                    ),
+                                    React.createElement(
+                                        Collapse,
+                                        { 'in': this.state.attachments },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'collapsed-section' },
+                                            React.createElement('input', { type: 'text', placeholder: 'File Name' })
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'collapsible' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'clickable' },
+                                    React.createElement(
+                                        Button,
+                                        { className: 'plus-button', onClick: () => this.setState({ photo_video: !this.state.photo_video }) },
+                                        React.createElement('span', { className: 'glyphicon glyphicon-plus' })
+                                    ),
+                                    React.createElement(
+                                        'h6',
+                                        null,
+                                        'Photo/Video'
+                                    ),
+                                    React.createElement(
+                                        Collapse,
+                                        { 'in': this.state.photo_video },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'collapsed-section' },
+                                            React.createElement('input', { type: 'text', placeholder: 'File Name' })
+                                        )
+                                    )
+                                )
                             )
                         ),
                         React.createElement(
@@ -21447,6 +21501,62 @@ var Message = React.createClass({
                                             'div',
                                             { className: 'collapsed-section' },
                                             React.createElement('input', { type: 'text', placeholder: 'File Name' })
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'collapsible' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'clickable' },
+                                    React.createElement(
+                                        Button,
+                                        { className: 'plus-button', onClick: () => this.setState({ due_date: !this.state.due_date }) },
+                                        React.createElement('span', { className: 'glyphicon glyphicon-plus' })
+                                    ),
+                                    React.createElement(
+                                        'h6',
+                                        null,
+                                        'Response Needed'
+                                    ),
+                                    React.createElement(
+                                        Collapse,
+                                        { 'in': this.state.due_date },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'collapsed-section' },
+                                            React.createElement('input', { type: 'checkbox' }),
+                                            ' Yes'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'collapsible' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'clickable' },
+                                    React.createElement(
+                                        Button,
+                                        { className: 'plus-button', onClick: () => this.setState({ due_date: !this.state.due_date }) },
+                                        React.createElement('span', { className: 'glyphicon glyphicon-plus' })
+                                    ),
+                                    React.createElement(
+                                        'h6',
+                                        null,
+                                        'Assignment'
+                                    ),
+                                    React.createElement(
+                                        Collapse,
+                                        { 'in': this.state.due_date },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'collapsed-section' },
+                                            React.createElement('input', { type: 'checkbox' }),
+                                            ' Yes'
                                         )
                                     )
                                 )
