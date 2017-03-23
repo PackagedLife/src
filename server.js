@@ -7,6 +7,6 @@ var bp = require("body-parser");
 app.use(bp.json());
 app.use(express.static(path.join(__dirname + "/client")));
 
-app.listen(8000, function() {
+app.listen(3000, function() {
     console.log("listening");
 });
