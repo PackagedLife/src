@@ -1,11 +1,13 @@
 header {
     margin: auto;
-    width: 25%;
+    width: 40%;
+    background: whitesmoke; 
 }
 
 .app-content {
     margin: auto;
-    width: 25%;
+    width: 35%;
+    background: whitesmoke; 
 }
 
 .formy-form {
